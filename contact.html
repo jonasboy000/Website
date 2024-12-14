@@ -88,16 +88,18 @@
                 <!-- Contactformulier -->
                 <article>
                     <h2>Contactformulier</h2>
-                    <form action="contact.php" method="POST">
+                    <form action="/" method="POST" data-netlify="true" name="contact">
+                        <input type="hidden" name="form-name" value="contact">
+                    
                         <label for="name" class="form-label">Naam *</label>
                         <input type="text" id="name" name="name" class="form-control mb-3" required>
-
+                    
                         <label for="email" class="form-label">E-mail *</label>
                         <input type="email" id="email" name="email" class="form-control mb-3" required>
-
+                    
                         <label for="message" class="form-label">Bericht *</label>
                         <textarea id="message" name="message" class="form-control mb-3" rows="5" required></textarea>
-
+                    
                         <button type="submit" class="btn btn-primary">Verstuur</button>
                     </form>
                 </article>
