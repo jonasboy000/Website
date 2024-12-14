@@ -1,0 +1,66 @@
+/*navigatie */
+.nav-link {
+    font-size: 1rem;
+    padding: 0.75rem 1.2rem;
+}
+
+/* Ruimte toevoegen onder interesses */
+section {
+    margin-bottom: 4rem; /* Zorg voor een goede scheiding tussen interesses en footer */
+}
+
+/* Ruimte toevoegen specifiek tussen footer en laatste sectie */
+footer {
+    margin-top: 3rem;
+}
+/* Stijl voor projectafbeeldingen */
+.project-image {
+    width: 500px;
+    height: 300px;
+    border-radius: 10px;
+    object-fit: cover;
+    margin: 0 auto;
+}
+
+/* Maak pijlknoppen zichtbaar */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    filter: invert(1); /* Zorgt voor witte pijlen */
+}
+
+/* Zichtbare pijlen voor navigatie */
+.visible-pointers {
+    background-color: black;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.carousel-inner .carousel-item {
+    transition: transform 1.5s ease, opacity 1.5s ease; /* Vloeiende overgang */
+}
+
+.carousel-item-next,
+.carousel-item-prev,
+.carousel-item.active {
+    transform: scale(1); /* Standaardgrootte */
+    opacity: 1; /* Volledig zichtbaar */
+}
+
+.carousel-item-next.carousel-item-left,
+.carousel-item-prev.carousel-item-right {
+    transform: scale(0.8); /* Kleinere schaal voor aankomende/sluitende items */
+    opacity: 0.5; /* Gedeeltelijk transparant */
+}
+
+.card {
+    max-width: 250px; /* Maximum breedte voor kleinere cards */
+    margin: 0 auto; /* Centreer cards */
+}
+
+.card-title {
+    font-size: 1.25rem; /* Maak de tekst kleiner */
+}
+
+.card-text {
+    font-size: 0.9rem; /* Kleinere beschrijvingstekst */
+}
